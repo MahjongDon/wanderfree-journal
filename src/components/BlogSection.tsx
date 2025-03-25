@@ -22,7 +22,7 @@ Georgia – A hidden gem with affordable wine, hiking, and historic sites.
 Indonesia (outside Bali) – Explore Lombok or Yogyakarta for untouched beauty on a budget.
 
 Each destination provides rich culture, delicious cuisine, and wallet-friendly accommodations. Ready to plan your trip?`,
-      imageUrl: "https://source.unsplash.com/300x200/?travel,bali"
+      imageUrl: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "How to Pack Light for a Week-Long Trip",
@@ -36,7 +36,7 @@ Each destination provides rich culture, delicious cuisine, and wallet-friendly a
 ✔ Toiletries in travel sizes – Opt for reusable mini bottles.
 
 With these tricks, you'll travel efficiently and never overpack again!`,
-      imageUrl: "https://source.unsplash.com/300x200/?travel,packing"
+      imageUrl: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Save Money on Flights with These Hacks",
@@ -50,7 +50,7 @@ With these tricks, you'll travel efficiently and never overpack again!`,
 ✈ Consider budget airlines – Just watch for hidden fees!
 
 With these tips, you'll fly farther for less.`,
-      imageUrl: "https://source.unsplash.com/300x200/?travel,flight"
+      imageUrl: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     }
   ];
   
