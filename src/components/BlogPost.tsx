@@ -29,7 +29,7 @@ const BlogPost = ({ title, excerpt, imageUrl, delay, content }: BlogPostProps) =
   
   return (
     <Card 
-      className="overflow-hidden animate-reveal shadow-lg h-full flex flex-col"
+      className="overflow-hidden animate-reveal shadow-lg h-full flex flex-col border border-gray-200"
       style={{ animationDelay: `${delay * 0.1}s` }}
     >
       <div className="aspect-video overflow-hidden relative">

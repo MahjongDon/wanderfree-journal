@@ -8,7 +8,7 @@ const BlogSection = () => {
   const blogPosts = [
     {
       title: "Top 5 Budget Destinations for 2025",
-      excerpt: "Traveling doesn't have to cost a fortune. From the stunning beaches of Vietnam to the historic streets of Budapest, our top 5 budget destinations for 2025 offer incredible experiences without the premium price tag.",
+      excerpt: "Explore affordable destinations like Bali, Portugal, and Vietnam. These spots offer stunning views, rich culture, and low costs for travelers. Bali's beaches are perfect for relaxation, while Portugal's historic charm comes at a fraction of Western Europe's prices. Vietnam's street food and landscapes are unbeatable for budget adventurers. Plan your 2025 trip now and save big!",
       content: `Traveling on a budget doesn't mean sacrificing adventure. In 2025, these five destinations offer incredible experiences without breaking the bank:
 
 Vietnam – Affordable street food, stunning landscapes, and budget-friendly hostels.
@@ -22,11 +22,11 @@ Georgia – A hidden gem with affordable wine, hiking, and historic sites.
 Indonesia (outside Bali) – Explore Lombok or Yogyakarta for untouched beauty on a budget.
 
 Each destination provides rich culture, delicious cuisine, and wallet-friendly accommodations. Ready to plan your trip?`,
-      imageUrl: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?q=80&w=2670&auto=format&fit=crop"
+      imageUrl: "https://source.unsplash.com/300x200/?travel,bali"
     },
     {
       title: "How to Pack Light for a Week-Long Trip",
-      excerpt: "Mastering the art of packing light can transform your travel experience. This guide breaks down exactly what you need for a week away, from versatile clothing options to compact toiletries.",
+      excerpt: "Packing light is easier than you think. Stick to versatile clothing: 3 tops, 2 bottoms, and 1 pair of shoes. Use packing cubes to stay organized and roll your clothes to save space. Don't forget a reusable water bottle and a small daypack for excursions. Skip the extras—most hotels have toiletries. Travel smarter, not heavier!",
       content: `Packing light saves you time, money, and stress. Follow these tips to streamline your luggage for a week-long adventure:
 
 ✔ Choose a carry-on – Avoid checked baggage fees and long waits.
@@ -36,11 +36,11 @@ Each destination provides rich culture, delicious cuisine, and wallet-friendly a
 ✔ Toiletries in travel sizes – Opt for reusable mini bottles.
 
 With these tricks, you'll travel efficiently and never overpack again!`,
-      imageUrl: "https://images.unsplash.com/photo-1541185934-01b600ea069c?q=80&w=2642&auto=format&fit=crop"
+      imageUrl: "https://source.unsplash.com/300x200/?travel,packing"
     },
     {
       title: "Save Money on Flights with These Hacks",
-      excerpt: "Airline tickets often represent the biggest expense in travel budgets. Learn the insider strategies for finding dramatically cheaper flights, from mastering search engine algorithms to utilizing fare alerts.",
+      excerpt: "Book flights on Tuesdays for the best deals, and use incognito mode to avoid price hikes. Be flexible with dates—midweek flights are often cheaper. Sign up for fare alerts on Skyscanner or Google Flights to catch sales. Consider nearby airports for better rates, and always clear your cookies before booking. Fly budget, travel more!",
       content: `Airfare can be a major travel expense, but smart strategies can help you score the best deals:
 
 ✈ Be flexible with dates – Flying mid-week is often cheaper.
@@ -50,20 +50,20 @@ With these tricks, you'll travel efficiently and never overpack again!`,
 ✈ Consider budget airlines – Just watch for hidden fees!
 
 With these tips, you'll fly farther for less.`,
-      imageUrl: "https://images.unsplash.com/photo-1559066653-edfd1e6bbbd5?q=80&w=2574&auto=format&fit=crop"
+      imageUrl: "https://source.unsplash.com/300x200/?travel,flight"
     }
   ];
   
   return (
     <section id="blog" ref={sectionRef} className="py-24 bg-gray-50">
-      <div className="wf-container">
+      <div className="wf-container max-w-content">
         <div className="text-center mb-16">
           <span className="text-wanderfree-blue font-medium">LATEST ARTICLES</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">Budget Travel Insights</h2>
           <p className="text-gray-600 max-w-xl mx-auto">Explore our latest tips and tricks to travel more while spending less.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {blogPosts.map((post, index) => (
             <BlogPost 
               key={index}
