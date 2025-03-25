@@ -1,15 +1,35 @@
 
 import { useState } from 'react';
+import { Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface BlogPostProps {
   title: string;
   excerpt: string;
+  content?: string;
   imageUrl: string;
   delay: number;
 }
 
-const BlogPost = ({ title, excerpt, imageUrl, delay }: BlogPostProps) => {
+const BlogPost = ({ title, excerpt, imageUrl, delay, content }: BlogPostProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+  };
+  
+  // Create a slug from the title
+  const createSlug = (title: string) => {
+    return title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/--+/g, '-')
+      .trim();
+  };
+  
+  const slug = createSlug(title);
   
   return (
     <article 
@@ -34,13 +54,21 @@ const BlogPost = ({ title, excerpt, imageUrl, delay }: BlogPostProps) => {
       </div>
       
       <div className="p-6">
+        <div className="flex items-center text-gray-500 text-sm mb-3">
+          <Calendar size={14} className="mr-1" />
+          <span>March 2025</span>
+        </div>
+        
         <h3 className="text-xl font-semibold mb-3">{title}</h3>
         <p className="text-gray-600">{excerpt}</p>
         
         <div className="mt-6">
-          <a href="#" className="wf-link">
+          <Link 
+            to={`/blog/${slug}`}
+            className="wf-link"
+          >
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </article>
