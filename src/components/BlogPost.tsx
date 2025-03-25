@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 
 interface BlogPostProps {
   title: string;
@@ -13,11 +14,6 @@ interface BlogPostProps {
 
 const BlogPost = ({ title, excerpt, imageUrl, delay, content }: BlogPostProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [expanded, setExpanded] = useState(false);
-  
-  const toggleExpand = () => {
-    setExpanded(!expanded);
-  };
   
   // Create a slug from the title
   const createSlug = (title: string) => {
@@ -32,8 +28,8 @@ const BlogPost = ({ title, excerpt, imageUrl, delay, content }: BlogPostProps) =
   const slug = createSlug(title);
   
   return (
-    <article 
-      className="wf-card overflow-hidden animate-reveal"
+    <Card 
+      className="overflow-hidden animate-reveal shadow-lg h-full flex flex-col"
       style={{ animationDelay: `${delay * 0.1}s` }}
     >
       <div className="aspect-video overflow-hidden relative">
@@ -53,25 +49,27 @@ const BlogPost = ({ title, excerpt, imageUrl, delay, content }: BlogPostProps) =
         />
       </div>
       
-      <div className="p-6">
-        <div className="flex items-center text-gray-500 text-sm mb-3">
+      <CardHeader className="p-6 pb-2">
+        <div className="flex items-center text-gray-500 text-sm mb-2">
           <Calendar size={14} className="mr-1" />
           <span>March 2025</span>
         </div>
-        
-        <h3 className="text-xl font-semibold mb-3">{title}</h3>
+        <h3 className="text-xl font-semibold">{title}</h3>
+      </CardHeader>
+      
+      <CardContent className="p-6 pt-0 flex-grow">
         <p className="text-gray-600">{excerpt}</p>
-        
-        <div className="mt-6">
-          <Link 
-            to={`/blog/${slug}`}
-            className="wf-link"
-          >
-            Read More
-          </Link>
-        </div>
-      </div>
-    </article>
+      </CardContent>
+      
+      <CardFooter className="p-6 pt-0">
+        <Link 
+          to={`/blog/${slug}`}
+          className="wf-link text-wanderfree-blue font-medium"
+        >
+          Read More
+        </Link>
+      </CardFooter>
+    </Card>
   );
 };
 

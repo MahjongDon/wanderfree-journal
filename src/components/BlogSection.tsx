@@ -59,10 +59,11 @@ With these tips, you'll fly farther for less.`,
       <div className="wf-container">
         <div className="text-center mb-16">
           <span className="text-wanderfree-blue font-medium">LATEST ARTICLES</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">Budget Travel Insights</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">Budget Travel Insights</h2>
+          <p className="text-gray-600 max-w-xl mx-auto">Explore our latest tips and tricks to travel more while spending less.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {blogPosts.map((post, index) => (
             <BlogPost 
               key={index}
