@@ -37,7 +37,7 @@ const Hero = ({ onReadBlog }: HeroProps) => {
             loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
             Budget Travel Tips for Everyone
           </h1>
           
